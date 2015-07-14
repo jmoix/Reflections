@@ -2,3 +2,5 @@ What happens when you initialize a repository? Why do you need to do it?
 the .git file is created. With this file you can configure your git settings and what to save from this project.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area holds a reference to what is to be committed. Without it you would just have to commit the entire directory.
+How can you use the staging area to make sure you have one commit per logical change?
+You can use git diff --stage to check you changes against the last commit. If the commit is too big, you can remove target files for the commit.
